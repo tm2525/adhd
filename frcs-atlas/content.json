@@ -1,0 +1,1493 @@
+{
+  "version": "0.1.0",
+  "built": "2026-11-18",
+  "sources": [
+    {
+      "id": "iscp",
+      "name": "ISCP · Cardiothoracic curriculum, August 2026",
+      "kind": "Curriculum",
+      "url": "https://www.iscp.ac.uk/media/1448/cardiothoracic-surgery-curriculum-version-2-august2026.pdf",
+      "year": 2026,
+      "note": "Curriculum anchor. Topic mapping in this beta is provisional, not a complete objective-level audit."
+    },
+    {
+      "id": "changes",
+      "name": "ISCP · 2026 change mapping",
+      "kind": "Curriculum",
+      "url": "https://www.iscp.ac.uk/media/1451/change-mapping-proforma-cardiothoracic-surgery-update-aug2026.pdf",
+      "year": 2026,
+      "note": "Official change document inspected for the seed curriculum lessons."
+    },
+    {
+      "id": "jcie",
+      "name": "JCIE · Cardiothoracic FRCS blueprint",
+      "kind": "Examination",
+      "url": "https://www.jcie.org.uk/Utils/DocumentGenerator.aspx?Type=CMS&docID=f8870ead-7857-48e0-a329-c11e1f68a1de",
+      "year": 2023,
+      "note": "Blueprint anchor; check official specialty page for revisions before an examination."
+    },
+    {
+      "id": "frcs",
+      "name": "JCIE · FRCS Cardiothoracic examination",
+      "kind": "Examination",
+      "url": "https://www.jcie.org.uk/content/content.aspx?ID=13",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "aats",
+      "name": "AATS · Resources",
+      "kind": "Society",
+      "url": "https://www.aats.org/resources",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "sts",
+      "name": "STS · Practice documents and policies",
+      "kind": "Society",
+      "url": "https://www.sts.org/resources/clinical-decision-making/clinical-practice-documents-and-policies",
+      "year": null,
+      "note": "Publisher rights apply. No guideline text or figures are reproduced in this app."
+    },
+    {
+      "id": "eacts",
+      "name": "EACTS · Clinical practice guidelines",
+      "kind": "Society",
+      "url": "https://www.eacts.org/clinical-practice-guidelines/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "ests",
+      "name": "ESTS · Guidelines",
+      "kind": "Society",
+      "url": "https://www.ests.org/educational_activities/online_educational_resources/guidelines.aspx",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "scts",
+      "name": "SCTS · Recommendations and guidelines",
+      "kind": "Society",
+      "url": "https://scts.org/professionals/surgical_sub_specialities/cardiac/recommendations_and_guidelines.aspx",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "nice",
+      "name": "NICE · Lung cancer NG122",
+      "kind": "Guideline",
+      "url": "https://www.nice.org.uk/guidance/ng122",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "niceall",
+      "name": "NICE · Guidance",
+      "kind": "Guideline",
+      "url": "https://www.nice.org.uk/guidance",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "esc25",
+      "name": "ESC/EACTS · Valvular heart disease 2025",
+      "kind": "Guideline",
+      "url": "https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/valvular-heart-disease/",
+      "year": 2025,
+      "note": "Link-only. ESC states that inclusion, citation or transformation of guideline content in software requires a formal licence. No recommendation tables or derived algorithms are included."
+    },
+    {
+      "id": "fitness25",
+      "name": "ERS/ESTS · Fitness guideline directory",
+      "kind": "Guideline",
+      "url": "https://www.ests.org/educational_activities/online_educational_resources/guidelines.aspx",
+      "year": 2025,
+      "note": "2025 fitness guideline listed by the society. Detailed recommendations not incorporated into this beta."
+    },
+    {
+      "id": "aftrial",
+      "name": "Gillinov et al. · AF ablation during mitral surgery",
+      "kind": "Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25853744/",
+      "year": 2015,
+      "note": "Original publication abstract checked. NEJM 372:1399–1409. DOI 10.1056/NEJMoa1500528. No independent clinical peer review of this app."
+    },
+    {
+      "id": "calgb",
+      "name": "Altorki et al. · CALGB 140503",
+      "kind": "Trial",
+      "url": "https://doi.org/10.1056/NEJMoa2212083",
+      "year": 2023,
+      "note": "Original publication abstract checked. Noninferiority primary endpoint. No independent clinical peer review of this app."
+    },
+    {
+      "id": "jcog",
+      "name": "Saji et al. · JCOG0802/WJOG4607L",
+      "kind": "Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35461558/",
+      "year": 2022,
+      "note": "Original publication abstract checked. DOI 10.1016/S0140-6736(21)02333-3. This is the original analysis, not the ten-year update."
+    },
+    {
+      "id": "jama",
+      "name": "JAMA Network · Cardiology",
+      "kind": "Journal",
+      "url": "https://jamanetwork.com/journals/jamacardiology",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "jamasurg",
+      "name": "JAMA Network · Surgery",
+      "kind": "Journal",
+      "url": "https://jamanetwork.com/journals/jamasurgery",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "nature",
+      "name": "Nature Reviews Cardiology",
+      "kind": "Journal",
+      "url": "https://www.nature.com/nrcardio/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "natmed",
+      "name": "Nature Medicine",
+      "kind": "Journal",
+      "url": "https://www.nature.com/nm/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "perfusion",
+      "name": "Perfusion",
+      "kind": "Journal",
+      "url": "https://journals.sagepub.com/home/prf",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "nejm",
+      "name": "New England Journal of Medicine",
+      "kind": "Journal",
+      "url": "https://www.nejm.org/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "lancet",
+      "name": "The Lancet",
+      "kind": "Journal",
+      "url": "https://www.thelancet.com/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "lanres",
+      "name": "The Lancet Respiratory Medicine",
+      "kind": "Journal",
+      "url": "https://www.thelancet.com/journals/lanres/home",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "jtcvs",
+      "name": "Journal of Thoracic and Cardiovascular Surgery",
+      "kind": "Journal",
+      "url": "https://www.jtcvs.org/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "annals",
+      "name": "The Annals of Thoracic Surgery",
+      "kind": "Journal",
+      "url": "https://www.annalsthoracicsurgery.org/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "ejcts",
+      "name": "European Journal of Cardio-Thoracic Surgery",
+      "kind": "Journal",
+      "url": "https://academic.oup.com/ejcts",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "icvts",
+      "name": "Interdisciplinary CardioVascular and Thoracic Surgery",
+      "kind": "Journal",
+      "url": "https://academic.oup.com/icvts",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "ehj",
+      "name": "European Heart Journal",
+      "kind": "Journal",
+      "url": "https://academic.oup.com/eurheartj",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "circulation",
+      "name": "Circulation",
+      "kind": "Journal",
+      "url": "https://www.ahajournals.org/journal/circ",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "thorax",
+      "name": "Thorax",
+      "kind": "Journal",
+      "url": "https://thorax.bmj.com/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "erj",
+      "name": "European Respiratory Journal",
+      "kind": "Journal",
+      "url": "https://publications.ersnet.org/journals/erj",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "jco",
+      "name": "Journal of Clinical Oncology",
+      "kind": "Journal",
+      "url": "https://ascopubs.org/journal/jco",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "bts",
+      "name": "British Thoracic Society · Guidelines",
+      "kind": "Society",
+      "url": "https://www.brit-thoracic.org.uk/quality-improvement/guidelines/",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    },
+    {
+      "id": "elso",
+      "name": "ELSO · Guidelines",
+      "kind": "Society",
+      "url": "https://www.elso.org/ecmo-resources/elso-ecmo-guidelines.aspx",
+      "year": null,
+      "note": "Directory link only; individual documents are not yet appraised."
+    }
+  ],
+  "modules": [
+    {
+      "id": "af",
+      "title": "AF ablation: reading the CTSN trial",
+      "domain": "Cardiac",
+      "summary": "Rhythm benefit, pacemaker trade-off and the importance of endpoint units.",
+      "sections": [
+        {
+          "heading": "Study question",
+          "text": "Gillinov and colleagues randomised 260 patients with persistent or long-standing persistent AF requiring mitral-valve surgery to concomitant ablation or no ablation. All patients underwent left atrial appendage closure. This is a specific surgical population, not all patients with AF. [aftrial]"
+        },
+        {
+          "heading": "What was measured",
+          "text": "Freedom from AF at both six and twelve months was assessed using three-day Holter monitoring: 63.2% with ablation versus 29.4% without. Do not describe this as continuous freedom from AF over an entire year. [aftrial]"
+        },
+        {
+          "heading": "Benefit and harm",
+          "text": "Permanent pacemaker implantation rates were 21.5 versus 8.1 per 100 patient-years. These are incidence rates, not percentages. One-year mortality did not differ significantly; the hazard ratio was 0.76 (95% CI 0.32–1.84). [aftrial]"
+        },
+        {
+          "heading": "Viva interpretation",
+          "text": "Explain the rhythm benefit and increased pacemaker rate together. A non-significant mortality result does not demonstrate equivalence or prove no long-term benefit. The paper does not establish that successful ablation permits anticoagulation withdrawal. [aftrial]"
+        }
+      ],
+      "sources": [
+        "aftrial"
+      ],
+      "objectives": [
+        "Interpret trial population and endpoint",
+        "Report event rates with correct units",
+        "Distinguish rhythm control from survival evidence"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "calgb",
+      "title": "CALGB 140503: what was randomised?",
+      "domain": "Thoracic",
+      "summary": "Sublobar versus lobar resection in selected peripheral node-negative disease.",
+      "sections": [
+        {
+          "heading": "Population and design",
+          "text": "697 patients were randomised to sublobar resection or lobectomy. The conclusion applies to peripheral NSCLC no larger than 2 cm with pathologically confirmed negative hilar and mediastinal nodes. [calgb]"
+        },
+        {
+          "heading": "Primary result",
+          "text": "At a median follow-up of seven years, the hazard ratio for recurrence or death was 1.01, with a 90% confidence interval of 0.83–1.24. Sublobar resection met the trial’s noninferiority criterion for disease-free survival. [calgb]"
+        },
+        {
+          "heading": "Absolute outcomes",
+          "text": "Five-year disease-free survival was 63.6% after sublobar resection and 64.1% after lobar resection. Overall survival was similar: HR 0.95, 95% CI 0.72–1.26. [calgb]"
+        },
+        {
+          "heading": "Limits of application",
+          "text": "This was not a randomised wedge-versus-segmentectomy comparison. Do not generalise the trial to larger, central or node-positive tumours or substitute radiological staging alone for its pathological nodal requirements. [calgb]"
+        }
+      ],
+      "sources": [
+        "calgb"
+      ],
+      "objectives": [
+        "Define the eligible population",
+        "Explain noninferiority",
+        "Avoid a wedge-versus-segmentectomy inference"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "jcog",
+      "title": "JCOG0802: survival and local relapse",
+      "domain": "Thoracic",
+      "summary": "Keep survival, relapse and analysis dates separate.",
+      "sections": [
+        {
+          "heading": "Study population",
+          "text": "The original JCOG0802/WJOG4607L report compared segmentectomy with lobectomy for peripheral NSCLC no larger than 2 cm with a consolidation-to-tumour ratio greater than 0.5. This is not the same question as an unrestricted sublobar comparison. [jcog]"
+        },
+        {
+          "heading": "Original overall-survival analysis",
+          "text": "Five-year overall survival was 94.3% with segmentectomy and 91.1% with lobectomy; HR 0.663, 95% CI 0.474–0.927. These figures belong to the original 2022 report. [jcog]"
+        },
+        {
+          "heading": "Local control matters",
+          "text": "Local relapse occurred in 10.5% versus 5.4%, respectively. Five-year relapse-free survival was 88.0% versus 87.9%. An overall-survival result does not mean better local control. [jcog]"
+        },
+        {
+          "heading": "Publication versions",
+          "text": "Do not merge later conference follow-up with the original result. A ten-year update is not numerically included here because its original dataset has not been independently checked for this build. [jcog]"
+        }
+      ],
+      "sources": [
+        "jcog"
+      ],
+      "objectives": [
+        "Distinguish survival from local control",
+        "Keep analysis versions separate"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "comparison",
+      "title": "Comparing the two sublobar trials",
+      "domain": "Thoracic",
+      "summary": "Related trials, different randomised comparisons.",
+      "sections": [
+        {
+          "heading": "Comparison",
+          "text": "JCOG0802 randomised segmentectomy versus lobectomy; CALGB 140503 randomised sublobar resection (wedge or segmentectomy) versus lobectomy. Their populations, comparisons and primary endpoints must be described separately. [jcog] [calgb]"
+        },
+        {
+          "heading": "Exam application",
+          "text": "In a viva, establish eligibility, nodal assessment and achievable resection before using a trial to support a proposal. Neither trial randomised every small nodule to every resection option. [jcog] [calgb]"
+        }
+      ],
+      "sources": [
+        "jcog",
+        "calgb"
+      ],
+      "objectives": [
+        "Compare randomised interventions",
+        "Recognise external-validity limits"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "curriculum",
+      "title": "The 2026 curriculum: what changed",
+      "domain": "Professional",
+      "summary": "New index procedures and emerging practice in the official change document.",
+      "sections": [
+        {
+          "heading": "Index procedures",
+          "text": "The update adds isolated uncomplicated mitral valve replacement and resection of a mediastinal lesion; it clarifies isolated uncomplicated AVR and decortication and/or washout of empyema. Robotic approaches are included within anatomical lung resection. [changes]"
+        },
+        {
+          "heading": "New and expanded knowledge",
+          "text": "Changes include minimal-access approaches, non-A non-B aortic dissection, frozen elephant trunk and head-and-neck debranching techniques, and standalone AF surgery. [changes]"
+        },
+        {
+          "heading": "Professional themes",
+          "text": "Genomics, clinical informatics and sustainability are made explicit. The change document acknowledges unequal training opportunities and does not require all trainees to fully evidence these emerging areas at this stage. [changes]"
+        },
+        {
+          "heading": "Scope of this app",
+          "text": "Curriculum knowledge, examination preparation and operative workplace competence are different. This beta provides learning support, not certification or an official syllabus completion assessment. [iscp]"
+        }
+      ],
+      "sources": [
+        "changes",
+        "iscp"
+      ],
+      "objectives": [
+        "Identify revised index procedures",
+        "Separate knowledge from operative competence"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "oesophagus",
+      "title": "Oesophageal requirements: learning scope",
+      "domain": "Thoracic",
+      "summary": "A dedicated curriculum checklist, not an emergency treatment protocol.",
+      "sections": [
+        {
+          "heading": "Required areas",
+          "text": "The 2026 appendix consolidates oesophageal anatomy and physiology, function tests and contrast studies, oesophageal injury and repair, prevention/evaluation/treatment of aerodigestive fistulae, and surgical/endoscopic management of those fistulae. [changes]"
+        },
+        {
+          "heading": "Learning exercise",
+          "text": "For each area, create an assessment case, an investigation-interpretation exercise and an explanation of operative or endoscopic principles. This is an editorial learning activity, not a sourced treatment recommendation."
+        }
+      ],
+      "sources": [
+        "changes"
+      ],
+      "objectives": [
+        "Recognise all six areas of the new appendix"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "index",
+      "title": "Index operations and resident learning",
+      "domain": "Professional",
+      "summary": "An index procedure is not a claim of exam weighting.",
+      "sections": [
+        {
+          "heading": "Updated operative scope",
+          "text": "The August 2026 change document updates cardiac and thoracic index procedures and clarifies assessment-level wording. It distinguishes expected operative familiarity and levels of supervision. [changes]"
+        },
+        {
+          "heading": "How to revise",
+          "text": "Use each operation as a learning scaffold: indication, anatomy, preparation, sequence, hazards, rescue, postoperative assessment and consent. This is an original study structure, not an official marking scheme."
+        },
+        {
+          "heading": "What progress means",
+          "text": "A self-rated confidence score in this app is not a PBA and does not demonstrate independent operative competence. Use the formal curriculum and workplace assessment process. [iscp]"
+        }
+      ],
+      "sources": [
+        "changes",
+        "iscp"
+      ],
+      "objectives": [
+        "Separate app progress from workplace assessment"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence appraisal: a surgical viva framework",
+      "domain": "Evidence",
+      "summary": "Practise describing what a paper establishes—and what it does not.",
+      "sections": [
+        {
+          "heading": "Start with the actual question",
+          "text": "State population, intervention, comparator and measured outcome. For CALGB 140503, that means a selected peripheral node-negative population and disease-free survival, not a randomised wedge-versus-segmentectomy question. [calgb]"
+        },
+        {
+          "heading": "Report uncertainty",
+          "text": "Report the confidence interval, its level and the analysis time point. CALGB reported a 90% CI for its primary DFS comparison; the original JCOG overall-survival result reported a 95% CI. Do not silently standardise them. [calgb] [jcog]"
+        },
+        {
+          "heading": "Separate endpoints",
+          "text": "The CTSN AF trial illustrates why improved rhythm control and pacemaker risk belong in the same discussion; its mortality analysis is not a substitute for its rhythm endpoint. [aftrial]"
+        },
+        {
+          "heading": "Editorial standard",
+          "text": "For any new paper, record original versus secondary analysis, abstract versus full-text access, population limits, funding/conflicts, and whether a correction or retraction has been checked. This is the app’s proposed review policy, not a society recommendation."
+        }
+      ],
+      "sources": [
+        "aftrial",
+        "calgb",
+        "jcog"
+      ],
+      "objectives": [
+        "Explain external validity",
+        "Report confidence intervals accurately",
+        "Distinguish clinical endpoints"
+      ],
+      "status": "Seed lesson",
+      "review": "Source-checked seed; independent clinical review pending",
+      "updated": "2026-11-18",
+      "mapping": "Provisional domain mapping; objective-level validation pending"
+    },
+    {
+      "id": "cardiac-0",
+      "title": "CABG: selection, conduits and graft assessment",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-1",
+      "title": "Aortic stenosis and valve intervention",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-2",
+      "title": "Aortic regurgitation and valve-sparing surgery",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-3",
+      "title": "Mitral repair, replacement and annular calcification",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-4",
+      "title": "Tricuspid disease and right-heart assessment",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-5",
+      "title": "Endocarditis and prosthetic valve dysfunction",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-6",
+      "title": "Acute aortic syndromes and malperfusion",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-7",
+      "title": "Aortic aneurysm, arch and descending repair",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-8",
+      "title": "CPB, cannulation and myocardial protection",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-9",
+      "title": "Perioperative medication and blood management",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "cardiac-10",
+      "title": "Cardiac masses and pericardial disease",
+      "domain": "Cardiac",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-0",
+      "title": "Lung nodules and subsolid lesions",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-1",
+      "title": "TNM, mediastinal staging and brain imaging",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-2",
+      "title": "Physiological fitness and risk assessment",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-3",
+      "title": "Lobectomy, segmentectomy and sleeve resection",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-4",
+      "title": "Perioperative systemic therapy and molecular testing",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-5",
+      "title": "Pleural infection, effusion and mesothelioma",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-6",
+      "title": "Pneumothorax, drains and prolonged air leak",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-7",
+      "title": "Thymoma and other mediastinal lesions",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-8",
+      "title": "Airway disease and tracheal reconstruction",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-9",
+      "title": "Chest wall, diaphragm, emphysema and bullae",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-10",
+      "title": "Thoracic trauma and haemoptysis",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "thoracic-11",
+      "title": "Lung metastasectomy and transplantation",
+      "domain": "Thoracic",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-0",
+      "title": "Postoperative bleeding and tamponade",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-1",
+      "title": "Low cardiac output and postcardiotomy shock",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-2",
+      "title": "VA-ECMO and temporary circulatory support",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-3",
+      "title": "Respiratory failure, ventilation and VV-ECMO",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-4",
+      "title": "AKI, neurological injury and infection",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-5",
+      "title": "Resuscitation after cardiothoracic surgery",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "critical-care-6",
+      "title": "Heart failure, durable support and transplantation",
+      "domain": "Critical care",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-0",
+      "title": "Sequential segmental analysis and shunt physiology",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-1",
+      "title": "ASD, VSD, AVSD and arterial duct",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-2",
+      "title": "Tetralogy, RVOT and pulmonary valve disease",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-3",
+      "title": "Transposition and arterial switch",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-4",
+      "title": "Single-ventricle pathways and Fontan circulation",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-5",
+      "title": "Coarctation and congenital arch disease",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "congenital-6",
+      "title": "Adult congenital disease and reoperations",
+      "domain": "Congenital",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "professional-0",
+      "title": "Consent, communication and shared decisions",
+      "domain": "Professional",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "professional-1",
+      "title": "Audit, statistics and risk-adjusted outcomes",
+      "domain": "Professional",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "professional-2",
+      "title": "Human factors, safety and quality improvement",
+      "domain": "Professional",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    },
+    {
+      "id": "professional-3",
+      "title": "Leadership, ethics, genomics and sustainability",
+      "domain": "Professional",
+      "summary": "Planned chapter. Clinical teaching and assessment content are not yet released.",
+      "sections": [],
+      "sources": [
+        "iscp",
+        "jcie"
+      ],
+      "objectives": [
+        "Objective-level curriculum mapping and specialist authoring required"
+      ],
+      "status": "Planned",
+      "review": "Not authored or clinically reviewed",
+      "updated": null,
+      "mapping": "Provisional domain mapping; not an official objective identifier"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "module": "af",
+      "stem": "In the CTSN mitral-surgery trial, how should the reported pacemaker values 21.5 versus 8.1 be expressed?",
+      "options": [
+        "Percentages at 30 days",
+        "Implantations per 100 patient-years",
+        "Risk ratios",
+        "Median time to implantation in days"
+      ],
+      "answer": 1,
+      "explanation": "They are incidence rates per 100 patient-years, not percentages. Preserve the original unit and reporting interval.",
+      "sources": [
+        "aftrial"
+      ]
+    },
+    {
+      "id": "q2",
+      "module": "af",
+      "stem": "Which outcome defined the CTSN trial’s primary rhythm endpoint?",
+      "options": [
+        "A single normal discharge ECG",
+        "No AF on a six-month ECG alone",
+        "Freedom from AF at both six and twelve months on three-day Holter assessment",
+        "Continuous implantable-loop monitoring without any AF for one year"
+      ],
+      "answer": 2,
+      "explanation": "The primary endpoint used three-day Holter recordings at both assessments; this is not continuous year-long monitoring.",
+      "sources": [
+        "aftrial"
+      ]
+    },
+    {
+      "id": "q3",
+      "module": "calgb",
+      "stem": "Which conclusion is supported by CALGB 140503?",
+      "options": [
+        "Wedge resection was randomised against segmentectomy and proved superior",
+        "Sublobar resection was noninferior for DFS in the trial’s selected peripheral, pathologically node-negative population",
+        "All central tumours should undergo wedge resection",
+        "Imaging alone replaced pathological nodal assessment"
+      ],
+      "answer": 1,
+      "explanation": "The randomised comparison was sublobar versus lobar resection, in a carefully defined population. Wedge versus segmentectomy was not the randomised comparison.",
+      "sources": [
+        "calgb"
+      ]
+    },
+    {
+      "id": "q4",
+      "module": "jcog",
+      "stem": "Which pair correctly describes the original JCOG0802 segmentectomy result compared with lobectomy?",
+      "options": [
+        "Lower overall survival and lower local relapse",
+        "Higher five-year overall survival and higher local relapse",
+        "Identical overall survival and no local relapse",
+        "A randomised wedge-versus-segmentectomy benefit"
+      ],
+      "answer": 1,
+      "explanation": "The original report found five-year OS 94.3% versus 91.1%, with local relapse 10.5% versus 5.4%. The endpoints must not be conflated.",
+      "sources": [
+        "jcog"
+      ]
+    },
+    {
+      "id": "q5",
+      "module": "calgb",
+      "stem": "What confidence level accompanied CALGB 140503’s primary DFS hazard ratio of 1.01?",
+      "options": [
+        "80%",
+        "90%",
+        "95%",
+        "99%"
+      ],
+      "answer": 1,
+      "explanation": "The primary result used a 90% CI of 0.83–1.24. Do not silently relabel it 95%.",
+      "sources": [
+        "calgb"
+      ]
+    },
+    {
+      "id": "q6",
+      "module": "curriculum",
+      "stem": "Which item was added as a cardiac index procedure in the August 2026 changes?",
+      "options": [
+        "All complex mitral repairs",
+        "Heart transplantation",
+        "Isolated uncomplicated mitral valve replacement",
+        "Every hybrid arch procedure"
+      ],
+      "answer": 2,
+      "explanation": "The official change document adds isolated uncomplicated MVR. An index procedure is not a question-frequency prediction.",
+      "sources": [
+        "changes"
+      ]
+    },
+    {
+      "id": "q7",
+      "module": "evidence",
+      "stem": "Why should a later conference update not overwrite the original trial result without qualification?",
+      "options": [
+        "Conference results are always false",
+        "Analysis date, follow-up, population and publication status must be preserved",
+        "Older publications must always take precedence",
+        "Only statistically significant results can be stored"
+      ],
+      "answer": 1,
+      "explanation": "Preserve publication versions. Later findings may be important, but must be individually checked and labelled; do not combine incompatible analyses.",
+      "sources": [
+        "jcog"
+      ]
+    },
+    {
+      "id": "q8",
+      "module": "index",
+      "stem": "What does marking a chapter as read demonstrate in this app?",
+      "options": [
+        "Independent operative competence",
+        "An official PBA result",
+        "An activity record only",
+        "Guaranteed FRCS readiness"
+      ],
+      "answer": 2,
+      "explanation": "Reading and self-rating are learning records, not formal operative or examination assessments.",
+      "sources": [
+        "iscp",
+        "changes"
+      ]
+    }
+  ],
+  "vivas": [
+    {
+      "id": "v1",
+      "title": "Does the AF trial change your operation?",
+      "domain": "Cardiac",
+      "module": "af",
+      "stem": "A patient with long-standing persistent AF requires mitral-valve surgery. You are asked what the CTSN trial contributes to counselling.",
+      "prompts": [
+        "Define the trial population and intervention.",
+        "State the rhythm endpoint and results.",
+        "Explain the pacemaker trade-off using correct units.",
+        "What did the study not establish?"
+      ],
+      "points": [
+        "260 patients undergoing mitral surgery; ablation versus no ablation; all had appendage closure.",
+        "Freedom from AF at both 6 and 12 months: 63.2% versus 29.4%.",
+        "Pacemakers: 21.5 versus 8.1 per 100 patient-years.",
+        "Do not claim established long-term survival benefit or permission to withdraw anticoagulation."
+      ],
+      "sources": [
+        "aftrial"
+      ]
+    },
+    {
+      "id": "v2",
+      "title": "Can this small lung cancer have a lesser resection?",
+      "domain": "Thoracic",
+      "module": "comparison",
+      "stem": "An examiner asks whether CALGB 140503 and JCOG0802 answer exactly the same question.",
+      "prompts": [
+        "Compare the randomised interventions.",
+        "Describe the selected populations.",
+        "Compare the important endpoints.",
+        "Name one invalid extrapolation."
+      ],
+      "points": [
+        "CALGB: sublobar versus lobar; JCOG: segmentectomy versus lobectomy.",
+        "Small peripheral lesions; state each trial’s particular eligibility and nodal requirements.",
+        "CALGB DFS noninferiority; original JCOG OS improvement with more local relapse.",
+        "Neither is a randomised demonstration that wedge and segmentectomy are interchangeable in all patients."
+      ],
+      "sources": [
+        "calgb",
+        "jcog"
+      ]
+    },
+    {
+      "id": "v3",
+      "title": "The curriculum has changed—what matters?",
+      "domain": "Professional",
+      "module": "curriculum",
+      "stem": "A junior resident asks what the August 2026 update means for their learning plan.",
+      "prompts": [
+        "Give a cardiac index-procedure change.",
+        "Give a thoracic change.",
+        "Describe the oesophageal scope.",
+        "Distinguish educational progress from formal competence."
+      ],
+      "points": [
+        "Isolated uncomplicated MVR added; isolated uncomplicated AVR clarified.",
+        "Mediastinal lesion resection added; empyema and robotic approach wording updated.",
+        "Anatomy/physiology, function tests, injury/repair and aerodigestive fistula assessment and management.",
+        "Use formal curriculum and workplace assessments; app self-ratings are not certification."
+      ],
+      "sources": [
+        "changes",
+        "iscp"
+      ]
+    }
+  ]
+}

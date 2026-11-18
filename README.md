@@ -37,3 +37,7 @@ Everything (settings, daily logs, task list, focus history) lives in your browse
 ## Disclaimer
 
 Planning aid only — not medical advice. Medication doses and timing belong to you and your prescriber; the app deliberately models a single daily long-acting dose (plus an optional booster **only if prescribed**) and warns when timing would threaten sleep.
+
+## Also in this repo: FRCS Atlas
+
+[`frcs-atlas/`](frcs-atlas/) is a separate installable app: an independent FRCS cardiothoracic learning beta (lessons, SBA questions, timed vivas, source directory). See [`frcs-atlas/README.md`](frcs-atlas/README.md).
