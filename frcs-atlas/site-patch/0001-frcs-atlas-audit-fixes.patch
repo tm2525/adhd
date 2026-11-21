@@ -1,0 +1,243 @@
+From 8aaeb70ca1ea8a995362ab246faf38b2fce07cf5 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Sat, 21 Nov 2026 01:08:16 +0000
+Subject: [PATCH] Fill gaps found by auditing the 54 FRCS Atlas chapters; add
+ professional practice section
+
+New: professional practice (NACSA/NLCA audit, funnel plot alert and alarm
+limits, VLAD/CUSUM, WHO checklist, Never Events, PSIRF, Duty of Candour,
+viva statistics, genomics, sustainability). Gap fills: echo cannot exclude
+type A dissection; open BTAI repair with left heart bypass; AS futility;
+bicaval vs biatrial; right-sided BPF anatomy; UCSD CTEPH classifications;
+shunt aspirin and CLARINET; Glenn/Fontan haemodynamic criteria and failing
+Fontan; Ebstein pre-excitation. Reconciling notes: DOAC stop 48-96 h (EACTS
+2024 recommendation), post-cardiotomy shock under 4%, AF ablation levels,
+Trusler constants, subaortic peak gradient.
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01Rh3NCHeYsKHYS4gaC3uK2P
+---
+ st4-src/content/c7.html |  4 ++--
+ st4-src/md/c10zadd.md   |  1 +
+ st4-src/md/c15zadd.md   |  8 +++++++-
+ st4-src/md/c16zadd.md   |  7 +++++++
+ st4-src/md/c4zadd.md    |  6 ++++++
+ st4-src/md/c6zadd.md    | 11 +++++++++++
+ st4-src/md/frcszadd.md  | 27 +++++++++++++++++++++++++++
+ st4-src/md/g11.md       |  5 +++++
+ st4-src/md/g3zadd.md    |  2 +-
+ st4-src/md/g8.md        | 15 ++++++++++++++-
+ st4-src/md/t17zadd.md   |  7 +++++++
+ 11 files changed, 88 insertions(+), 5 deletions(-)
+
+diff --git a/st4-src/content/c7.html b/st4-src/content/c7.html
+index 4c44f7a..ed48e76 100644
+--- a/st4-src/content/c7.html
++++ b/st4-src/content/c7.html
+@@ -321,12 +321,12 @@
+ <tr>
+ <td>Concomitant surgical ablation is recommended in patients having mitral valve surgery with AF suitable for rhythm control</td>
+ <td>I</td>
+-<td>Guideline extracts (level not seen; I recall A)</td>
++<td>Level A (checked 21 November 2026: ESC 2024 class I confirmed in the ESC Essential Messages; level A from a published summary of the guideline; the STS 2017 guideline also gives I A)</td>
+ </tr>
+ <tr>
+ <td>Concomitant surgical ablation should be considered in non-mitral cardiac surgery with AF suitable for rhythm control, with shared decision-making</td>
+ <td>IIa</td>
+-<td>Guideline extracts (level not seen; I recall B)</td>
++<td>Level B (checked 21 November 2026 from a published summary of the guideline; class IIa confirmed in the ESC Essential Messages)</td>
+ </tr>
+ <tr>
+ <td>Endoscopic and hybrid ablation should be considered in symptomatic persistent AF refractory to antiarrhythmic drugs, within a team of electrophysiologists and surgeons</td>
+diff --git a/st4-src/md/c10zadd.md b/st4-src/md/c10zadd.md
+index 2183a54..71768b6 100644
+--- a/st4-src/md/c10zadd.md
++++ b/st4-src/md/c10zadd.md
+@@ -1380,6 +1380,7 @@ Added 20 November 2026 from Jeppsson A, Rocca B, Hansson EC et al. 2024 EACTS Gu
+ ### DOACs, elective surgery
+ - No bridging needed (reversible pharmacodynamics). Stopping time depends on drug, half-life, dose, indication, liver and renal function (CrCl, Cockcroft-Gault). Dabigatran is almost entirely renally cleared and contraindicated at CrCl under 30 ml/min.
+ - Text: stop **36 to 48 h** before with CrCl over 80 ml/min; dabigatran **48 h** at CrCl 50 to 80; add **24 h** (about 2 half-lives) at CrCl 30 to 50. Urgent cases: ideally delay 48 h.
++- **Which number to quote** (checked 21 November 2026): the recommendation table (Table 7) says discontinue DOACs **between 48 and 96 h** before elective open-heart surgery, depending on the drug's half-life and renal function, with no routine bridging (**I B**). The 36 to 48 h figure is from the body text for normal renal function only. The 2024 patient blood management guideline (Cardiac 10, earlier) gives at least 48 h with eGFR over 80. In the exam, quote the recommendation: 48 to 96 h.
+ - Normal PT suggests minimal anti-FXa effect; normal calibrated aPTT suggests minimal dabigatran. **Diluted thrombin time** is linear with dabigatran (safe under **21 s**). **Calibrated anti-FXa** under **30 ng/ml** is considered safe for major surgery; delay by **12 h** for 30 to 200 ng/ml and **24 h** for 200 to 400 ng/ml.
+ 
+ **Table 5 (DOACs)**
+diff --git a/st4-src/md/c15zadd.md b/st4-src/md/c15zadd.md
+index ddc9aa5..64411f0 100644
+--- a/st4-src/md/c15zadd.md
++++ b/st4-src/md/c15zadd.md
+@@ -2373,7 +2373,7 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Update
+ ### Postcardiotomy cardiogenic shock
+ | Point | Source and status |
+ |---|---|
+-| Postcardiotomy cardiogenic shock follows 0.5 to 1.5% of adult cardiac operations: failure to separate from bypass, or refractory low output (index under 2.0 to 2.2 L/min/m², systolic under 90 mmHg, rising lactate, oliguria) despite optimised preload, rhythm, ventilation and high-dose inotropes | FRCS Atlas draft; not checked against a primary source |
++| Postcardiotomy cardiogenic shock follows 0.5 to 1.5% of adult cardiac operations: failure to separate from bypass, or refractory low output (index under 2.0 to 2.2 L/min/m², systolic under 90 mmHg, rising lactate, oliguria) despite optimised preload, rhythm, ventilation and high-dose inotropes | FRCS Atlas draft; not checked against a primary source. Checked 21 November 2026: the 2020 EACTS/ELSO/STS/AATS post-cardiotomy ECLS consensus and the 2024 patient blood management guideline (earlier in this tab) both give **under 4%** for post-cardiotomy shock; the 0.5 to 1.5% figure was not found for shock. Quote under 4% |
+ | First exclude a correctable technical cause with TOE and graft flow: graft occlusion, prosthetic dysfunction or SAM, residual shunt, tamponade, air | Checked in principle: the difficult-weaning algorithm of the 2024 EACTS bypass guideline, section 11.2, Figure 2 (in Cardiac 14), puts structural review before mechanical support. Atlas list of causes: not checked |
+ | Escalate early, before multi-organ failure and severe hyperlactataemia, following the 2020 EACTS/ELSO/STS/AATS postcardiotomy ECLS consensus (cited by the Atlas; not read here). VA-ECMO gives full biventricular and respiratory support at 4 to 6 L/min; "ECPELLA" means VA-ECMO vented by an Impella; an IABP can serve as the LV vent | FRCS Atlas draft; not checked against a primary source |
+ | Worked case: 4 hours after mitral replacement, index 1.6, CVP 19, mean pressure 58 mmHg on high-dose adrenaline; TOE shows a distended akinetic LV, a normal prosthesis and no tamponade. Answer: early VA-ECMO, with an LV venting plan if the aortic valve stops opening | FRCS Atlas draft; not checked against a primary source |
+@@ -2394,3 +2394,9 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Update
+ | Allograft vasculopathy: screen yearly by angiography, IVUS or CT coronary angiography; besides statins, proliferation signal inhibitors (everolimus, sirolimus) slow it | FRCS Atlas draft; not checked against a primary source |
+ | Primary graft dysfunction within 24 hours, graded mild, moderate or severe (ISHLT); severe means support beyond an IABP is needed; start VA-ECMO early to rest the graft | FRCS Atlas draft; not checked against a primary source (TSRA, already in this tab: leading cause of early death; IABP or ECMO) |
+ | DCD hearts are recovered either by normothermic regional perfusion or onto ex situ machine perfusion (Organ Care System); the Atlas states survival comparable to donation after brain death | Organ Care System for DCD hearts checked: TSRA Review ch. 73, PDF p. 575. Normothermic regional perfusion and the survival comparison: FRCS Atlas draft; not checked against a primary source |
++
++## Bicaval against biatrial implantation: gap filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++- **Biatrial** (Lower and Shumway, 1960): recipient atrial cuffs are left and sewn to the donor atria. Large composite atria with two sinus nodes; more atrial arrhythmias, sinus node dysfunction needing pacing, tricuspid regurgitation from distorted right atrial geometry, and atrial thrombus.
++- **Bicaval** (1990s): left atrial cuff anastomosis plus separate SVC and IVC anastomoses. Keeps right atrial geometry and the donor sinus node intact, giving **less TR, fewer atrial arrhythmias and pacemakers** and a shorter stay, with survival at least as good in registry and meta-analysis data. Its specific risk is caval anastomotic stenosis (SVC more than IVC). Now the standard technique. Checked: standard textbook account, consistent with the TSRA transplant chapter already in this tab; figures not quoted.
+diff --git a/st4-src/md/c16zadd.md b/st4-src/md/c16zadd.md
+index 728f7c2..23908a3 100644
+--- a/st4-src/md/c16zadd.md
++++ b/st4-src/md/c16zadd.md
+@@ -53,3 +53,10 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (Master Update
+ | Point | Source and status |
+ |---|---|
+ | Secondary cardiac tumours are 20 to 40 times commoner than primary tumours | FRCS Atlas draft; not checked against a primary source (TSRA ch. 83, PDF p. 649: the majority are metastases) |
++
++## CTEPH: the UCSD classifications by name: gap filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++- **UCSD surgical classification (Jamieson and Thistlethwaite)**: Type I fresh or organised thrombus in the main or lobar arteries; Type II thickened intima and webs proximal to the segmental arteries; Type III disease confined to distal segmental and subsegmental arteries; Type IV intrinsic small-vessel arteriopathy (not operable). This is the Type I to IV scheme already in this tab.
++- **UCSD level classification (Madani, Jamieson and colleagues, 2012)**, which replaced it in surgical reporting: Level 0 no disease; Level I main pulmonary artery (**Level IC** complete occlusion of one main pulmonary artery); Level II lobar; Level III segmental; Level IV subsegmental. Levels I to III are suitable for endarterectomy at an expert centre; Level IV is technically demanding and often goes to balloon pulmonary angioplasty.
++- The Atlas chapter's levels ("II lobar/segmental, III distal segmental") do not match these published definitions; use the ones above. Checked: published definitions as recalled; not re-read against the original papers.
+diff --git a/st4-src/md/c4zadd.md b/st4-src/md/c4zadd.md
+index a57b19d..3a4d4e5 100644
+--- a/st4-src/md/c4zadd.md
++++ b/st4-src/md/c4zadd.md
+@@ -604,3 +604,9 @@ If you revise from the Atlas, correct these:
+ - Mechanism and operation? El Khoury type Ic (dilated ventriculo-aortic junction, normal cusps). Repair with annular stabilisation at an experienced centre avoids anticoagulation. The tab already notes that a basal ring above about 27 mm predicts recurrence without an annuloplasty.
+ - Cardioplegia? Direct ostial and/or retrograde, with an LV vent, because root cardioplegia runs back into the ventricle.
+ - SBA distractors from the Atlas worth knowing: LVESD 44 mm with BSA 2.1 m² (LVESDi 21) and LVESD 46 mm with BSA 2.0 m² (LVESDi 23) do not meet Class I. The second would meet the IIb low-risk threshold (above 22 mm/m²).
++
++## When not to intervene in aortic stenosis: gap filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++- The Class I recommendation to intervene in symptomatic severe AS assumes the intervention can improve quality of life or prolong survival. The ESC/EACTS guideline makes intervention **not recommended (Class III)** in patients with severe comorbidities when it is unlikely to improve quality of life or to prolong survival **beyond 1 year**; the American guideline likewise frames AVR around an expected survival of more than 1 year with acceptable quality of life. Checked: 2021 ESC/EACTS wording as recalled (Class III C); not re-read against the 2025 text.
++- In the Heart Team discussion: frailty, cognitive impairment, severe lung or liver disease and cancer with limited prognosis point to palliative care rather than TAVI or SAVR.
+diff --git a/st4-src/md/c6zadd.md b/st4-src/md/c6zadd.md
+index 72c94ae..2ee05f8 100644
+--- a/st4-src/md/c6zadd.md
++++ b/st4-src/md/c6zadd.md
+@@ -4315,3 +4315,14 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (FRCS-Atlas-Ma
+ - This meets MAGIC criteria (major radiological criterion: perigraft gas more than 7 weeks after implantation) and suggests a secondary aorto-oesophageal fistula. Escalate to the tertiary MDT (aortic, upper GI or thoracic surgery, microbiology). Cross-match, take blood cultures, start broad intravenous antimicrobials with antifungal cover, keep him nil by mouth and monitor closely.
+ - If he has a massive bleed, emergency relining TEVAR controls the haemorrhage as a bridge.
+ - The curative operation is complete explantation, debridement, in situ biological reconstruction, oesophageal resection or diversion with a vascularised flap, and prolonged targeted antimicrobials.
++
++## Aortic syndrome imaging and open repair of blunt aortic injury: gaps filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++### Echo does not exclude type A dissection
++- Transthoracic echo is the first bedside test: it can show a flap, aortic regurgitation, pericardial effusion or tamponade, and LV function. A normal or non-diagnostic TTE does **not** exclude an acute aortic syndrome; go to CT angiography (TOE if the patient is too unstable to move, often in theatre). Checked: principle as in the ESC aortic guidelines; the often-quoted TTE figures for proximal dissection (sensitivity about 77 to 80%, specificity 93 to 96%) are from the 2014 ESC guideline as recalled, not re-read.
++
++### Open repair of blunt thoracic aortic injury
++- Stent graft repair is preferred where the anatomy suits (already in this tab). Open repair is chosen when the injury reaches the ascending aorta or proximal arch, when there is no adequate seal zone or the arch is too tightly curved (young patients), when iliofemoral access is unusable, or when another injury needs a thoracotomy anyway.
++- Approach: left posterolateral thoracotomy through the 4th space; proximal control between the left carotid and left subclavian arteries, distal control below the injury; interposition graft (occasionally primary repair).
++- Distal aortic perfusion protects the cord: **left heart bypass** (left atrium or inferior pulmonary vein to femoral artery or distal aorta, centrifugal pump, low-dose heparin, useful with head or solid-organ injury) or full bypass. Clamp-and-sew is quicker but paraplegia rises with clamp time over about 30 minutes. The AAST multicentre study (Fabian et al., J Trauma 1997) reported paraplegia of about 16% with clamp-and-sew against about 5% with distal perfusion (figures as recalled; not checked against the paper).
+diff --git a/st4-src/md/frcszadd.md b/st4-src/md/frcszadd.md
+index bb11a52..d23cb68 100644
+--- a/st4-src/md/frcszadd.md
++++ b/st4-src/md/frcszadd.md
+@@ -1072,3 +1072,30 @@ Titles and citations as the Atlas gives them; not checked, and the Atlas states
+ | Thoracic | STS consensus on screen-detected nodules; CELEB trial, lung volume reduction surgery against endobronchial valves (Buttery et al., Eur Respir J 2023); WSES oesophageal perforation guidelines |
+ | Transplant | ISHLT 2024 heart transplant candidate guideline |
+ | Textbooks | Key Questions in Cardiac Surgery (Moorjani, Ohri, Wechsler); Bojar, Manual of Perioperative Care in Adult Cardiac Surgery |
++
++## Professional practice: outcomes, audit, patient safety, statistics, genomics and sustainability
++Added 21 November 2026. The 2026 curriculum (above) adds genomics, clinical informatics and sustainability as emerging areas, and CiP 7 asks trainees to assess personal and unit outcomes; the FRCS Atlas chapter 54 covers this ground but the course did not. Facts were checked on 21 November 2026 against the named sources, mostly through search extracts of the primary pages; the full PDFs were not re-read.
++
++### National audit and outcome monitoring (CiP 7)
++- Cardiac surgery: the **National Adult Cardiac Surgery Audit (NACSA)**, part of NICOR, collects every adult cardiac operation and publishes risk-adjusted outcomes by unit and surgeon. Thoracic surgery: the SCTS thoracic audit and the National Lung Cancer Audit (NLCA). Risk adjustment compares observed with expected deaths from a risk model (for example EuroSCORE II).
++- **Funnel plots**: each unit or surgeon is plotted against volume, with control limits that narrow as volume rises. HQIP outlier guidance for national audits (updated November 2025): **alert** = more than **2 SD** from expected (about the 95% limit); **alarm** = more than **3 SD** (the **99.8%** limit, as shown on NACSA funnel plots). An alarm triggers data validation, notification of the trust and, if confirmed, review and publication.
++- **VLAD** (variable life-adjusted display): running total of expected minus observed deaths, so the line rises when outcomes are better than predicted. **CUSUM**: cumulative sum that signals when it crosses a preset boundary; both give real-time monitoring between annual reports.
++
++### Patient safety
++- **WHO Surgical Safety Checklist** (Haynes et al., N Engl J Med 2009;360:491; 7,688 patients in 8 hospitals): deaths **1.5% to 0.8%**, inpatient complications **11.0% to 7.0%**. Checked: PubMed abstract.
++- **Never Events** (NHS England framework, revised 2018, list updated February 2021): wholly preventable serious incidents such as wrong-site surgery, wrong implant or prosthesis, retained foreign object after a procedure and misplaced nasogastric tube. A consultation opened in February 2024; findings published September 2025 (two-thirds of respondents called the framework unfit for purpose). It **remains in force** until a replacement is issued. Checked: NHS England publication page, via search extract.
++- **PSIRF** (Patient Safety Incident Response Framework, NHS England, **August 2022**) replaced the 2015 Serious Incident Framework: proportionate, systems-based learning responses (patient safety incident investigation, after-action review, swarm huddles) and compassionate engagement with patients, families and staff, in place of routine root-cause analysis reports. Checked: NHS England, via search extract.
++- **Statutory Duty of Candour** (Regulation 20, Health and Social Care Act 2008 (Regulated Activities) Regulations 2014; applies to the organisation). A notifiable safety incident is unintended or unexpected, occurs in a regulated activity, and in a health professional's reasonable opinion has caused or could cause **death, severe harm, moderate harm or prolonged psychological harm** (prolonged = at least 28 continuous days). Steps: tell the person **in person** as soon as reasonably practicable, give an account and explain further enquiries, offer support, **apologise**, then follow up with a **written notification** and keep records. CQC: an apology is not an admission of liability (see also Compensation Act 2006 s2). Individual clinicians have a separate professional duty of candour (GMC and NMC guidance). Checked: CQC Regulation 20 guidance and legislation.gov.uk, via search extract.
++
++### Statistics for the viva
++- **ARR** = control event rate minus treatment event rate; **RRR** = ARR divided by control rate; **NNT** = 1/ARR. Worked from Haynes: ARR for death 1.5 − 0.8 = 0.7 percentage points, RRR about 47%, NNT about 143 operations per death avoided.
++- **Hazard ratio**: relative instantaneous event rate over follow-up; report with its confidence interval (see the trial appraisal steps above for 90% against 95% intervals).
++- **Sensitivity and specificity**: **SnNout** (a highly sensitive test, if negative, rules the condition out) and **SpPin** (a highly specific test, if positive, rules it in). Predictive values change with prevalence; sensitivity and specificity do not.
++- **Non-inferiority trials**: a prespecified margin and a one-sided test. Intention-to-treat analysis is not conservative here, because crossover and non-adherence pull the arms together and favour a non-inferiority conclusion; check that the **per-protocol** analysis agrees. Standard methodology (CONSORT extension for non-inferiority trials).
++
++### Genomics
++- Delivered through the **NHS Genomic Medicine Service** and the National Genomic Test Directory, with documented consent covering incidental findings and implications for relatives. Variants are classified pathogenic, likely pathogenic, **uncertain significance (VUS)**, likely benign or benign (ACMG/AMP); a VUS should not by itself change surgical thresholds or trigger cascade testing. The clinical uses are elsewhere in the course: heritable thoracic aortic disease genes and gene-specific thresholds (Cardiac 6), EGFR, ALK and PD-L1 testing in lung cancer (Thoracic 4), and 22q11 deletion and other syndromes (Congenital). Checked: standard practice; no single primary source.
++
++### Sustainability
++- **Desflurane**: NHS England announced in January 2023 that it would stop using it; from **1 April 2024** use is restricted to exceptional cases. NHS Scotland stopped buying it in March 2023. Prefer intravenous anaesthesia or low-flow sevoflurane; reduce nitrous oxide use and leakage. Checked: NHS England guidance (March 2024), via search extract; the Scotland date from a secondary source.
++- The NHS net zero targets (*Delivering a Net Zero National Health Service*, 2020): **2040** for the emissions the NHS controls directly and **2045** for those it can influence. In theatre: reusable rather than single-use equipment where safe, rationalised custom packs, waste segregation, switching off equipment and ventilation when theatres are empty. The intercollegiate Green Theatre Checklist (2022) collects these measures. Checked: targets and checklist from the published documents as recalled; not re-read.
+diff --git a/st4-src/md/g11.md b/st4-src/md/g11.md
+index e748f38..a08f623 100644
+--- a/st4-src/md/g11.md
++++ b/st4-src/md/g11.md
+@@ -523,3 +523,8 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter me
+ 
+ ### Truncus arteriosus
+ - 22q11 deletion in about 30 to 40% (FRCS Atlas draft; not checked; TSRA ch. 109, pages 824 to 831, states the association without a figure).
++
++## Ebstein anomaly: pre-excitation figure: gap filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++- Accessory pathways (pre-excitation, WPW) occur in roughly **15 to 25%** of patients with Ebstein anomaly; they are usually right-sided and often multiple, and sudden death is most likely with one (TSRA, above). The 2025 ACC/AHA recommendations on EP study and ablation before tricuspid surgery are in the ACHD tab. Checked: range from standard textbook series; not checked against a primary source.
+diff --git a/st4-src/md/g3zadd.md b/st4-src/md/g3zadd.md
+index e5a4523..c62c1c6 100644
+--- a/st4-src/md/g3zadd.md
++++ b/st4-src/md/g3zadd.md
+@@ -71,7 +71,7 @@ Added 20 November 2026 from TSRA Review of Cardiothoracic Surgery 3rd ed., ch. 1
+ |---|---|
+ | Supravalvar (printed as "supraventricular") | Associated with sinus of Valsalva and major artery stenosis; with coronary, peripheral and pulmonary stenoses suggests Williams syndrome. **Repair for discrete lesion with mean gradient above 50 mmHg.** Patch aortoplasty, rarely root replacement |
+ | Valvar | Often bicuspid; associated coarctation and PDA. Intervene for dyspnoea, syncope or angina; critical AS (valve area below 0.6 cm²); regular exercisers or planned pregnancy; symptomatic moderate or severe AR; EF below 55%; LVESD above 55 mm. **Root replacement for diameter above 55 mm** |
+-| Subvalvar | Usually fibromuscular ridge; jet causes AR. **Surgery for mean gradient above 50 mmHg**, symptoms, or with moderate or severe AR. VSD closure may unmask the gradient. Myectomy or myotomy if the aortic valve does not need replacing. **20% recurrence**: lifelong surveillance. Tunnel-like LVOT may need Konno (printed "Kono"), with high recurrence and yearly surveillance. AVSD repair with LVOTO: patch enlargement of infundibulum to prevent recurrence. Patch repairs: lifelong surveillance for endocarditis and aneurysm |
++| Subvalvar | Usually fibromuscular ridge; jet causes AR. **Surgery for mean gradient above 50 mmHg** (as printed; the 2025 ACC/AHA guideline uses a **peak** gradient of 50 mmHg or more for subaortic stenosis, checked 21 November 2026), symptoms, or with moderate or severe AR. VSD closure may unmask the gradient. Myectomy or myotomy if the aortic valve does not need replacing. **20% recurrence**: lifelong surveillance. Tunnel-like LVOT may need Konno (printed "Kono"), with high recurrence and yearly surveillance. AVSD repair with LVOTO: patch enlargement of infundibulum to prevent recurrence. Patch repairs: lifelong surveillance for endocarditis and aneurysm |
+ | Shone syndrome | Multiple left-sided inflow and outflow operations over life; prone to conduction delay and arrhythmia, often needing pacemaker and/or Maze |
+ 
+ ### Transposition (adult)
+diff --git a/st4-src/md/g8.md b/st4-src/md/g8.md
+index 6852746..31954a8 100644
+--- a/st4-src/md/g8.md
++++ b/st4-src/md/g8.md
+@@ -440,7 +440,7 @@ In example 2 the slide uses 70% as the systemic venous value.
+ 
+ **Pulmonary artery banding**
+ - Restricts excessive pulmonary blood flow by a band around the main PA.
+-- Usually 3 mm wide silicone-impregnated nylon tape, measured and marked to circumference by Trusler's rule (21 mm + weight).
++- Usually 3 mm wide silicone-impregnated nylon tape, measured and marked to circumference by Trusler's rule (slide: "21 mm + weight"; the published rule is 20 mm + 1 mm/kg for non-mixing lesions, 24 mm + 1 mm/kg for mixing lesions and 22 mm + 1 mm/kg for a single ventricle heading for Fontan; checked against StatPearls, Pulmonary Artery Banding).
+ - Adjust according to saturations and blood pressure; suture to adventitia to prevent migration (diagram shows Hemoclips and a pledgeted fixation suture).
+ - Ideal echo velocity across the band 3 to 4 m/s.
+ - The band is a fixed obstruction that becomes more restrictive as the child grows: regular echo follow-up.
+@@ -716,3 +716,16 @@ Added 20 November 2026 after comparing the FRCS Atlas HTML builds (53-chapter me
+ - Ductal stenting versus a modified Blalock-Taussig-Thomas shunt for duct-dependent pulmonary flow: lower early procedural morbidity, higher reintervention rate (FRCS Atlas draft; not checked against a primary source).
+ - Acute shunt thrombosis, the Atlas rescue sequence with numbers: 100% oxygen, fluid bolus, phenylephrine or noradrenaline to raise systemic driving pressure across the shunt, **IV heparin 100 IU/kg**, then catheter rescue (stent or thrombolysis) or surgical revision, with ECMO as backup (FRCS Atlas draft; heparin dose and catheter stenting not checked against a primary source).
+ - Atlas viva: two hours after a shunt, saturation falls from 80% to 48% and the continuous murmur disappears. Answer: shunt thrombosis until proven otherwise.
++
++## Shunt antiplatelet therapy and cavopulmonary criteria: gaps filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++### After a modified Blalock-Taussig-Thomas shunt
++- Heparin infusion in the early postoperative period, then **low-dose aspirin** for as long as the shunt is in place (dose by unit protocol). Shunt thrombosis is the main early killer; the rescue sequence is above.
++- **CLARINET** (Wessel et al., N Engl J Med 2013;368:2377): adding clopidogrel to standard care (mostly aspirin) in infants with systemic-to-pulmonary shunts did **not** reduce death or shunt thrombosis. Checked: trial result as recalled; not re-read.
++
++### Haemodynamic criteria before Glenn and Fontan
++- Both depend on passive pulmonary flow, so pulmonary resistance must be low: for Fontan, mean PA pressure about **15 mmHg or less**, transpulmonary gradient about 6 to 8 mmHg or less and **PVR under about 2 to 3 Wood units·m²**, with good ventricular function, a competent AV valve and unobstructed pulmonary arteries. Choussat's original 1977 criteria included mean PA pressure 15 mmHg or less and PVR under 4 Wood units·m². This tab's Fontan criteria say only "low pulmonary resistance". Checked: textbook thresholds as recalled; units vary between sources.
++
++### Signs that a Fontan is failing
++- Rising systemic venous (Fontan) pressure, commonly quoted as over about 15 to 18 mmHg; protein-losing enteropathy (low albumin; **24-hour stool alpha-1 antitrypsin clearance**, as in the 2025 ACC/AHA guideline); plastic bronchitis; Fontan-associated liver disease; atrial arrhythmia; cyanosis from venovenous collaterals; ventricular or AV-valve failure. Referral to a transplant team is in the ACHD tab.
+diff --git a/st4-src/md/t17zadd.md b/st4-src/md/t17zadd.md
+index debc42f..e37e4c9 100644
+--- a/st4-src/md/t17zadd.md
++++ b/st4-src/md/t17zadd.md
+@@ -158,3 +158,10 @@ Primary source for checking: TSRA Review 3rd ed., ch. 22 (Gedeon, Swanson), alre
+ | How well embolisation works | Bronchial artery embolisation controls over 80 to 90% of bleeding | FRCS Atlas draft; not checked. TSRA ch. 22 (PDF p. 191) says only that it is the most effective first treatment |
+ | Imaging before embolisation | CT bronchial angiography after bronchoscopy, before embolisation | FRCS Atlas draft; not checked (TSRA ch. 22: CT without, then with, contrast, as in this tab) |
+ | Pulmonary artery source | Emergency resection is reserved for bleeding that fails or recurs after embolisation, or for a pulmonary artery source such as a Rasmussen aneurysm | Partly checked: TSRA ch. 22 (PDF p. 191) gives a pulmonary artery source in 5% and lists pulmonary artery rupture as one of three reasons to operate during active bleeding. The term Rasmussen aneurysm is FRCS Atlas draft, not checked |
++
++## Why fistula is commoner after right pneumonectomy: gap filled from the Atlas audit
++Added 21 November 2026 after auditing all 54 FRCS Atlas chapters against this site: only points the site lacked. Each line says what it was checked against.
++
++- **Blood supply**: the right main bronchus usually has **one** bronchial artery and the left **two** (the anatomy is in Thoracic 17: "usually two left, one right"), so the right stump is less well perfused.
++- **Cover**: the left stump retracts under the aortic arch into the mediastinum and is covered by surrounding tissue; the right stump is longer and lies exposed in the empty pleural space.
++- Consequences: keep the right stump short and cover it with vascularised tissue (intercostal muscle, pericardial fat pad, pleura, serratus or latissimus, omentum), especially after induction chemoradiotherapy, in completion pneumonectomy, or with a positive bronchial margin. Checked: standard anatomy and operative teaching (TSRA pneumonectomy and BPF chapters already cited in this tab).
+-- 
+2.43.0
+

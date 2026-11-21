@@ -75,6 +75,47 @@ MANIFEST = [
     ("iscp2026", "54. ISCP August 2026 Professional Practice: Genomics, Informatics, Outcomes & Sustainability", "ISCP 2026"),
 ]
 
+# Corrections found by auditing the chapters against the revision site and primary sources (21 Nov 2026).
+# (chapter id, what the chapter says, what to use instead, how it was checked)
+ERRATA = [
+    ("af_arrhythmia", "Concomitant ablation at mitral surgery is Class I, C (ESC/EACTS 2024)",
+     "Class I, level A; non-mitral cardiac surgery IIa B", "ESC 2024 AF guideline (class from ESC Essential Messages; level from a published summary); STS 2017 also I A"),
+    ("tricuspid_valve", "Concomitant repair for mild-to-moderate secondary TR with a dilated annulus is IIa",
+     "2025 ESC/EACTS: severe I B; moderate IIa B; mild with annulus >=40 mm or >21 mm/m2 IIb B", "2025 ESC/EACTS valve guideline, via published summaries"),
+    ("palliative_shunts", "Trusler's rule for single ventricle: 24 mm + 1 mm/kg",
+     "20 mm + 1 mm/kg non-mixing; 24 mm + 1 mm/kg mixing; 22 mm + 1 mm/kg single ventricle for Fontan", "StatPearls, Pulmonary Artery Banding"),
+    ("lvoto_ebstein_coronaries", "Subaortic membrane: operate at peak/mean >=50/30 mmHg",
+     "2025 ACC/AHA ACHD uses a peak gradient >=50 mmHg for subaortic stenosis (mean >=40 mmHg is for valvar AS)", "2025 ACC/AHA ACHD guideline text"),
+    ("cardiac_icu_bojar", "Stop DOACs 36-48 h before surgery",
+     "EACTS 2024 recommendation: 48-96 h before elective open-heart surgery by drug and renal function, no routine bridging (I B); 36-48 h is the body-text figure for normal renal function only", "2024 EACTS perioperative medication guideline, Table 7"),
+    ("cardiac_icu_bojar", "Adrenaline in arrest after cardiac surgery: 50-100 mcg aliquots",
+     "Routine 1 mg is avoided; EACTS (Dunning 2009) allows smaller 100-300 mcg boluses peri-arrest", "EACTS 2009 resuscitation guideline, via search extract"),
+    ("cpb_pccs", "Post-cardiotomy cardiogenic shock incidence 0.5-1.5%",
+     "Under 4% (2020 EACTS/ELSO/STS/AATS consensus; 2024 EACTS patient blood management guideline)", "consensus document, via search extract"),
+    ("cpb_pccs", "Protamine 1 mg per 100 IU heparin",
+     "2024 guideline: protamine-to-heparin ratio below 1.0 to avoid overdose (I B)", "revision site, checked against the guideline"),
+    ("cad_cabg", "Left main PCI with SYNTAX >=33 is Class III (2024 ESC CCS)",
+     "Class III B was the 2018 recommendation; the 2024 guideline replaced it (IIb B statement for high surgical risk)", "revision site, checked against the guideline"),
+    ("primary_mr", "Early repair is recommended when any one of AF, sPAP >50 mmHg or LAVI >=60 mL/m2 is present",
+     "Class I B only with at least three of the four markers; AF or PH alone IIa B; LA dilatation alone IIa B", "revision site, checked against the 2025 guideline"),
+    ("aortic_regurgitation", "Earlier surgery at LVESDi >20-22 mm/m2 or LVEF <=55% (IIb/IIa)",
+     "2025: IIb B at LVESDi >22 mm/m2, or LVESVi >45 mL/m2, or LVEF <=55%; >20 mm/m2 was the 2021 threshold", "revision site, checked against the guideline"),
+    ("endoleak", "Treat type II/V endoleak with sac growth >=5 mm",
+     "Sac growth >=10 mm (EACTS/STS and ESC 2024, IIa C)", "revision site, checked against the guidelines"),
+    ("infection", "Early/late graft infection cut-off 4 months; 4-6 weeks IV antibiotics",
+     "Early infection <=3 months (ACC/AHA); antibiotics at least 6 weeks", "revision site, checked against the guidelines"),
+    ("shunt_lesions", "Close VSD at PVR <3-5 WU",
+     "2025 ACC/AHA: Class 1 at PVR <=2 WU; 2a at >2 to <5 WU; 2b at 5-8 WU if it falls on PAH therapy", "revision site, checked against the 2025 ACHD guideline"),
+    ("lvoto_ebstein_coronaries", "Class I EP study before Ebstein surgery; Class I surgery for AAOCA with high-risk anatomy",
+     "EP study and ablation before tricuspid surgery is 2a; AAOCA: Class 1 if symptomatic or ischaemia, asymptomatic high-risk anatomy 2a", "revision site, checked against the 2025 ACHD guideline"),
+    ("coarctation_iaa_rings", "Covered stent is first-line for adult coarctation",
+     "Surgery or stent; stents carry more reintervention; individualise", "revision site, checked against the 2025 ACHD guideline"),
+    ("achd_picu", "ACHD specialist care for non-cardiac surgery in IC-D, IIA-D, IIIA-D",
+     "Post-procedure care IC-D, IIB-D, IIIA-D; anaesthesia IC-D, IIC-D, IIIA-D (IIA-D applies to cardiac procedures)", "revision site, checked against the 2025 ACHD guideline"),
+    ("pe_cteph", "UCSD levels: II lobar/segmental, III distal segmental",
+     "UCSD levels (Madani 2012): I main PA (IC complete occlusion), II lobar, III segmental, IV subsegmental", "published definitions"),
+]
+
 FALLBACK_CH54 = """<article id="new-iscp2026">
 <h2>Chapter 54: ISCP August 2026 Professional Practice: Genomics, Clinical Informatics, Surgical Outcomes (CiP 7), Statistics and Sustainability</h2>
 <p><small>ISCP Version 2 (August 2026) Professional Practice · Full-length educational draft · independent clinical review pending</small></p>
@@ -267,6 +308,21 @@ def scope_chapter(cid: str, html: str, prefix: str, ref_prefix_fmt: str, chapter
     return scope_ids(html, prefix, ref_prefix_fmt.format(rkey), ids_in(ref_el))
 
 
+def errata_html(chapters: dict, link_prefix: str) -> str:
+    titles = {cid: t for cid, t, _ in MANIFEST}
+    rows = []
+    for cid, says, use, checked in ERRATA:
+        if cid not in chapters:
+            continue
+        rows.append(f'<tr><td><a href="#{link_prefix}{cid}">{H(titles[cid].split(". ", 1)[0])}</a></td>'
+                    f'<td>{H(says)}</td><td><strong>{H(use)}</strong></td><td><small>{H(checked)}</small></td></tr>')
+    return ('<section id="atlas-errata"><h2>Corrections to these chapters (checked 21 November 2026)</h2>'
+            '<p>Where a chapter below disagrees with the current guideline, use the right-hand column. '
+            'The chapters are educational drafts and are not otherwise altered.</p>'
+            '<div style="overflow-x:auto"><table><thead><tr><th>Ch</th><th>Chapter says</th><th>Use instead</th><th>Checked against</th></tr></thead>'
+            f'<tbody>{"".join(rows)}</tbody></table></div></section>')
+
+
 def write_standalone(out_path: Path, chapters: dict, chapter_ref: dict, refs: list):
     css = (
         "body{margin:0;font:16.5px/1.65 system-ui;color:#173845;background:#eef5f6;display:grid;grid-template-columns:300px 1fr;min-height:100vh}"
@@ -308,6 +364,7 @@ def write_standalone(out_path: Path, chapters: dict, chapter_ref: dict, refs: li
         f'<div id="toc">{"".join(toc_links)}</div></aside>'
         f'<main><section><h1>FRCS (CTh) &amp; EBCTS 2026 Complete Textbook</h1>'
         f'<p>Offline single-file HTML edition containing <strong>{len(chapters)} of 54</strong> full chapters. Independent clinical review pending; not an institutional protocol.</p></section>'
+        f'{errata_html(chapters, "chap-")}'
         f'{"".join(body_parts)}{"".join(ref_parts)}</main>'
         f'<script>{search_js}</script></body></html>'
     )
@@ -337,7 +394,7 @@ def write_consolidated(out_path: Path, base_html: str, chapters: dict, chapter_r
         f'<section id="atlas-py-master-index" style="background:#fff;padding:20px;margin:16px auto;max-width:1000px;border-radius:12px">'
         f'<h2>FRCS (CTh) &amp; EBCTS 2026 Complete Atlas ({len(chapters)} of 54 chapters merged)</h2>'
         f'<p>All {base_count} original study sections, source library, gallery, revision tools and scripts are preserved verbatim below.</p>'
-        f'<ol>{"".join(toc_items)}</ol></section>'
+        f'<ol>{"".join(toc_items)}</ol>{errata_html(chapters, "atlas-py-")}</section>'
     )
     extra_section = (
         f'<section id="atlas-py-expanded-chapters" style="background:#fff;padding:22px;margin:16px auto;max-width:1000px;border-radius:12px">'
